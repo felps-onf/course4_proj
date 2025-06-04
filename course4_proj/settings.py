@@ -155,8 +155,11 @@ class Dev(Configuration):
   LANGUAGE_CODE = 'en-us'
 
   TIME_ZONE = 'UTC'
+  EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
   USE_I18N = True
+  ADMINS = [("felps", "felipeeflorentino@gmail.com")]
+
 
   USE_L10N = True
 
